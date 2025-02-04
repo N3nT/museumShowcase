@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Line from './components/Line';
+import Pagination from './components/Pagination';
 import Footer from './components/Footer';
 
 
@@ -13,6 +14,7 @@ function App() {
       <Nav setTheme={setTheme} theme={theme}/>
       <Line/>
       <Main/>
+      <Pagination/>
       <Line/>
       <Footer/>
     </div>
