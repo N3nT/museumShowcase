@@ -1,0 +1,20 @@
+{ "preference": null,
+    "pagination": {
+        "total": 60057,
+        "limit": 10,
+        "offset": 0,
+        "total_pages": 6006,
+        "current_page": 1
+    },
+    "data": [
+        {
+            "_score": 11527.824,
+            "short_description": "In 1888, Van Gogh moved into his own home in Arles, France. He dubbed it the “Studio of the South,” hoping that fellow artists would join him there to work. This is one of three versions he painted of his beloved Arles bedroom. While its vivid palette and dramatic perspective seem to burst with nervous vitality, Van Gogh intended the painting \"to express utter repose.\"",
+            "artwork_type_title": "Painting",
+            "artist_title": "Vincent van Gogh",
+            "id": 28560,
+            "image_id": "25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+            "title": "The Bedroom"
+        }
+    ]
+}

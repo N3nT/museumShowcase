@@ -1,3 +1,7 @@
 https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&limit=10&fields=id,title,image_id,artist_title,short_description&classification_titles:%22painting%22&page=1
 
 https://www.artic.edu/iiif/2/{id}full/843,/0/default.jpg
+
+https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&limit=10&fields=id,title,image_id,artist_title,short_description&artwork_type_title:painting%22&page=1
+
+https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&artwork_type_title=Painting&limit=10&fields=id,title,image_id,artist_title,short_description,artwork_type_title&page=1
