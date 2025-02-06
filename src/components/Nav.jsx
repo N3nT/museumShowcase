@@ -16,7 +16,7 @@ function Nav(props){
 
     return(
         <nav className='flex justify-between items-center max-w-[1000px] w-full p-5'>
-            <h1 className="font-bold">Art Institute of Chicago</h1>
+            <h1 className="font-bold sm:text-xl">Art Institute of Chicago</h1>
             <button onClick={handleThemeChange}>{icon}</button>
         </nav>
     )
