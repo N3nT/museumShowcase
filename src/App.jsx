@@ -4,10 +4,12 @@ import Main from './components/Main';
 import Line from './components/Line';
 import Pagination from './components/Pagination';
 import Footer from './components/Footer';
+import Loading from './components/Loading';
 
 function App() {
   const [page, setPage] = useState(1);
   const [theme, setTheme] = useState('light');
+  const [loading, setLoading] = useState(true);
 
   const [artworks, setArtwork] = useState([]);
 
@@ -23,8 +25,10 @@ function App() {
       const data = await response.json();
       setArtwork(data.data);
       console.log(data);
+      setLoading(false);
     } catch(error){
       console.error(error.message);
+      setLoading(false);
     }
   }
 
@@ -37,8 +41,7 @@ function App() {
     <div className="bg-stone-100 dark:bg-zinc-950 dark:text-white w-full flex flex-col items-center min-h-screen" data-theme={theme}>
       <Nav setTheme={setTheme} theme={theme}/>
       <Line/>
-      <Main artworks={artworks}/>
-      <Pagination setPage={setPage} page={page}/>
+      {loading ? (<Loading/>):(<><Main artworks={artworks}/><Pagination setPage={setPage} page={page}/></>) }
       <Line/>
       <Footer/>
     </div>
