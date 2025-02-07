@@ -11,7 +11,7 @@ function Pagination(props){
     }
 
     return(
-        <div className="max-w-[300px] w-full flex justify-between items-center px-5 pb-5">
+        <div className="max-w-[300px] w-full flex justify-between items-center px-5 pb-15 pt-10">
             <button className="py-2 px-4 border-1" onClick={decreasePage}>Prev</button>
             <p>{props.page}</p>
             <button className="py-2 px-4 border-1" onClick={increasePage}>Next</button>

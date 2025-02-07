@@ -25,10 +25,10 @@ function App() {
       const data = await response.json();
       setArtwork(data.data);
       console.log(data);
-      setLoading(false);
+      setLoading(true);
     } catch(error){
       console.error(error.message);
-      setLoading(false);
+      setLoading(true);
     }
   }
 

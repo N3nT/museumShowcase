@@ -7,10 +7,10 @@ function Nav(props){
     const handleThemeChange = () => {
         if(props.theme === 'light'){
           props.setTheme("dark");
-          setIcon(<SunMedium/>)
+          setIcon(<SunMedium className='w-7 h-7 sm:w-10 sm:h-10'/>)
         }else{
           props.setTheme("light");
-          setIcon(<Moon/>)
+          setIcon(<Moon className='w-7 h-7 sm:w-10 sm:h-10'/>)
         }
     }
 
