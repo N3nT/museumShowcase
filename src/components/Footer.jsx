@@ -1,4 +1,4 @@
-function Footer(){
+const Footer = () => {
 
     return(
         <div className="max-w-[1000px] p-5 flex justify-between w-full items-center">

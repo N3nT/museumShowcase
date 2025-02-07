@@ -1,4 +1,4 @@
-function Pagination(props){
+const Pagination = (props) => {
 
     const increasePage = () => {
         props.setPage(props.page + 1);

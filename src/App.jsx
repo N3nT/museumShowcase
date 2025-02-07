@@ -6,7 +6,7 @@ import Pagination from './components/Pagination';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
 
-function App() {
+const  App =  () => {
   const [page, setPage] = useState(1);
   const [theme, setTheme] = useState('light');
   const [loading, setLoading] = useState(true);
@@ -25,10 +25,10 @@ function App() {
       const data = await response.json();
       setArtwork(data.data);
       console.log(data);
-      setLoading(true);
+      setLoading(false);
     } catch(error){
       console.error(error.message);
-      setLoading(true);
+      setLoading(false);
     }
   }
 

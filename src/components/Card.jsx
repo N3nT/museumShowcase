@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CircleHelp } from 'lucide-react';
-function Card(props){
+const Card = (props) => {
 
     const [visibleInfo, setVisibleInfo] = useState(false);
     const handleQuestionClick = () => {
