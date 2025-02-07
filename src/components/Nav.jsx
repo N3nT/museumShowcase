@@ -3,15 +3,15 @@ import { SunMedium, Moon } from 'lucide-react';
 
 const Nav = (props) => {    
 
-    const [icon, setIcon] = useState(<Moon/>);
+    const [icon, setIcon] = useState(<Moon className='w-7 h-7 sm:w-9 sm:h-9 cursor-pointer'/>);
 
     const handleThemeChange = () => {
         if(props.theme === 'light'){
           props.setTheme("dark");
-          setIcon(<SunMedium className='w-7 h-7 sm:w-9 sm:h-9'/>)
+          setIcon(<SunMedium className='w-7 h-7 sm:w-9 sm:h-9 cursor-pointer'/>)
         }else{
           props.setTheme("light");
-          setIcon(<Moon className='w-7 h-7 sm:w-9 sm:h-9'/>)
+          setIcon(<Moon className='w-7 h-7 sm:w-9 sm:h-9 cursor-pointer'/>)
         }
     }
 
