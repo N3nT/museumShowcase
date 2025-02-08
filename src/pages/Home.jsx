@@ -15,7 +15,7 @@ const  Home =  () => {
 
   const { theme } = useContext(ThemeContext);
 
-  async function fetchData(){
+  const fetchData = async () => {
     const URL = `https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&artwork_type_title=Painting&limit=12&fields=id,title,image_id,artist_title,short_description,artwork_type_title&page=${page}`;
     
     try {
