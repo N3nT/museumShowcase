@@ -27,7 +27,6 @@ const  Home =  () => {
       const data = await response.json();
       setArtwork(data.data);
       setTotalPage(data.pagination.total_pages);
-      console.log(data);
       setLoading(false);
     } catch(error){
       console.error(error.message);
