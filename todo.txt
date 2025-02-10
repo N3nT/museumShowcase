@@ -1,0 +1,5 @@
+1. Łatwiejsze przeglądanie stron
+2. Losowość wyświetlanych elementów
+3. Animacja zmiany ikony między jasnym a ciemnym trybem
+4. Dodawanie do ulubionych, local storage lub logowanie
+5. Nie resetowanie się stron po wejściu w szczegóły zdjęcia
