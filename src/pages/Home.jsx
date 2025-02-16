@@ -25,11 +25,14 @@ const  Home =  () => {
       }
 
       const data = await response.json();
+      console.log(data);
       setArtwork(data.data);
       setTotalPage(data.pagination.total_pages);
       setLoading(false);
     } catch(error){
       console.error(error.message);
+      setArtwork();
+      setTotalPage(0);
       setLoading(false);
     }
   }
