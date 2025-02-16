@@ -20,7 +20,6 @@ const Card = (props) => {
                         </Link>
                     </div>
                 </div>
-           
         )
     } else return null;
     

@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import Loading from '../components/Loading';
 
 const  Home =  () => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(Number(localStorage.getItem('page')) || 1);
   const [totalPage, setTotalPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [artworks, setArtwork] = useState([]);
@@ -36,8 +36,8 @@ const  Home =  () => {
 
   useEffect(() => {
     fetchData();
+    localStorage.setItem('page', page);
   }, [page]);
-  
 
   return (
     <div className="bg-stone-100 dark:bg-zinc-950 dark:text-white w-full flex flex-col items-center min-h-screen" data-theme={theme}>
